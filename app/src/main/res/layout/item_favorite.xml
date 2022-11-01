@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardMovieFavorite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/colorcardview"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardMaxElevation="0dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgMovie"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/ghibli"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="@dimen/_8sdp" />
+
+        <TextView
+            android:id="@+id/tvcardName"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:includeFontPadding="false"
+            style="@style/AppTheme.TextTitle"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="Castle in the Sky"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgMovie"
+            app:layout_constraintTop_toTopOf="@id/imgMovie" />
+
+        <ImageView
+            android:id="@+id/ivFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tvcardName"
+            app:layout_constraintTop_toTopOf="@+id/tvcardName" />
+
+        <TextView
+            android:id="@+id/tvoriginalTitle"
+            android:includeFontPadding="false"
+            style="@style/AppTheme.TextMain"
+            android:text="Tenkū no shiro Rapyuta"
+            app:layout_constraintEnd_toEndOf="@id/tvcardName"
+            app:layout_constraintStart_toStartOf="@id/tvcardName"
+            app:layout_constraintTop_toBottomOf="@id/tvcardName" />
+
+        <TextView
+            android:id="@+id/tvRealaseDateMovie"
+            style="@style/AppTheme.TextMain"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:text="1986"
+            android:includeFontPadding="false"
+            app:layout_constraintEnd_toEndOf="@id/tvcardName"
+            app:layout_constraintStart_toStartOf="@id/tvcardName"
+            app:layout_constraintTop_toBottomOf="@id/tvoriginalTitle" />
+
+        <TextView
+            android:id="@+id/tvDirectorMovie"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:includeFontPadding="false"
+            style="@style/AppTheme.TextMain"
+            android:text="Hayao Miyazaki"
+            app:layout_constraintEnd_toEndOf="@id/tvcardName"
+            app:layout_constraintStart_toStartOf="@id/tvcardName"
+            app:layout_constraintTop_toBottomOf="@id/tvRealaseDateMovie" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

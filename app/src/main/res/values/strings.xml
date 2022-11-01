@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Challange CH6</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_login">Login</string>
+    <string name="tvRegister">Register</string>
+    <string name="enter_your_password">Masukkan Password Anda</string>
+    <string name="enter_your_username">Masukkan Username Anda</string>
+    <string name="silahkan_login">Silahkan Login</string>
+    <string name="logologin">logoLogin</string>
+    <string name="regLogin">Login</string>
+    <string name="register">Register</string>
+    <string name="enterPassReg">Maskkan Password Anda</string>
+    <string name="enterNameReg">Masukkan Nama Anda</string>
+    <string name="enter_your_username_reg">Enter Your Username</string>
+    <string name="please_register">Silahkan Registrasi</string>
+    <string name="regisLogo">registerlogo</string>
+    <string name="u2022" translatable="false">•</string>
+    <string name="website">WEBSITE</string>
+
+</resources>
